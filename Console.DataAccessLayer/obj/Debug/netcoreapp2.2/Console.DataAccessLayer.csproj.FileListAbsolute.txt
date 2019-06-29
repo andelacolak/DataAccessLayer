@@ -1,0 +1,6 @@
+C:\Users\Andela\Desktop\Anđela\pmf\baze\turizam\Console.DataAccessLayer\bin\Debug\netcoreapp2.2\Console.DataAccessLayer.deps.json
+C:\Users\Andela\Desktop\Anđela\pmf\baze\turizam\Console.DataAccessLayer\bin\Debug\netcoreapp2.2\Console.DataAccessLayer.dll
+C:\Users\Andela\Desktop\Anđela\pmf\baze\turizam\Console.DataAccessLayer\obj\Debug\netcoreapp2.2\Console.DataAccessLayer.csprojAssemblyReference.cache
+C:\Users\Andela\Desktop\Anđela\pmf\baze\turizam\Console.DataAccessLayer\obj\Debug\netcoreapp2.2\Console.DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\Andela\Desktop\Anđela\pmf\baze\turizam\Console.DataAccessLayer\obj\Debug\netcoreapp2.2\Console.DataAccessLayer.AssemblyInfoInputs.cache
+C:\Users\Andela\Desktop\Anđela\pmf\baze\turizam\Console.DataAccessLayer\obj\Debug\netcoreapp2.2\Console.DataAccessLayer.AssemblyInfo.cs
