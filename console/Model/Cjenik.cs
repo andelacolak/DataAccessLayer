@@ -17,7 +17,7 @@ namespace console.Model
         public DateTime datum_do { get; set; }
 
         public Cijena cijena { get; set; }
-
+        
         public IEnumerable<SmjestajnaJedinica> smjestajnaJedinica { get; set; }
 
         public Cjenik()

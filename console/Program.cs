@@ -43,7 +43,19 @@ namespace console
 
             var toInsert = new Cjenik();
 
-            database.Insert( toInsert );
+            database.Insert( "cjenici", toInsert );
+
+            Console.WriteLine( "Data inserted in Cjenici" );
+
+            toInsert.cijena.iznos = 100000000;
+
+            database.Update( "cjenici", toInsert );
+
+            Console.WriteLine( "Update data from cjenici" );
+
+            database.Delete( "cjenici", toInsert );
+
+            Console.WriteLine( "Data deleted from Cjenik" );
 
             Console.ReadLine();
         }

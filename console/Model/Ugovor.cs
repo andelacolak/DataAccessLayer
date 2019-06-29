@@ -19,7 +19,7 @@ namespace console.Model
         public bool b2b { get; set; }
 
         public ObjectId iznajmljivac_id { get; set; }
-
+        
         public IEnumerable<Iznajmljivac> iznajmljivac { get; set; }
     }
 }

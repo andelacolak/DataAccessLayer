@@ -39,15 +39,28 @@ namespace console.Example
 
             return db.GetCollection<T>( collection )
                 .Aggregate()
-                .Project( projection ?? "{ datum_od:1 }" )
+                //.Project( projection ?? "{ datum_od:1 }" )
                 .Lookup( from, localField, foreignField, asField )
                 .ToList()
                 .Select( x => BsonSerializer.Deserialize<T>( x ) );
         }
 
-        public static bool Insert<T>( this IMongoDatabase db, T toInsert )
+        public static void Insert<T>( this IMongoDatabase db, string collectionName, T toInsert )
+            where T : Entity
         {
-            return db.Insert( toInsert );
+            db.GetCollection<T>( collectionName ).InsertOne(toInsert);
+        }
+
+        public static void Update<T>( this IMongoDatabase db, string collectionName, T toUpdate )
+            where T : Entity
+        {
+            db.GetCollection<T>( collectionName ).ReplaceOne( y => y.ID == toUpdate.ID, toUpdate );
+        }
+
+        public static void Delete<T>( this IMongoDatabase db, string collectionName, T toDelete )
+            where T : Entity
+        {
+            db.GetCollection<T>( collectionName).DeleteOne( y => y.ID == toDelete.ID );
         }
     }
 }
